@@ -31,7 +31,7 @@ class GameEngine {
         this.running = true;
         const gameLoop = () => {
             this.loop();
-            requestAnimFrame(gameLoop, this.ctx.canvas);
+            requestAnimationFrame(gameLoop);  // **Ensures continuous execution**
         };
         gameLoop();
     };
